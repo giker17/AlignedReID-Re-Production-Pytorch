@@ -196,7 +196,7 @@ def main():
         im_mean = [0.486, 0.459, 0.408],
         im_std = [0.229, 0.224, 0.225],
         batch_dims = 'NCHW',
-        num_prefetch_threads = 2)
+        num_prefetch_threads = 1)
     test_set_kwargs = dict(
         part = 'val',
         batch_size = 32,
