@@ -41,7 +41,12 @@ def create_dataset(
       "Only trainval part of the combined dataset is available now."
     im_dir = ospeu('~/Dataset/market1501_cuhk03_duke/trainval_images')
     partition_file = ospeu('~/Dataset/market1501_cuhk03_duke/partitions.pkl')
-
+    
+  elif name == '20180717103311494':
+    data_path = r'D:\DevRoot\Pycharm\Data\ReID\20180717103311494'
+    im_dir = ospeu(data_path + '/images')
+    partition_file = ospeu(data_path + '/partitions.pkl')
+    
   ##################
   # Create Dataset #
   ##################
